@@ -27,7 +27,7 @@ app.use("/api/todos", todoRoutes);
 
 // Test route
 app.get("/", (req, res) => {
-  res.send("🚀 Todo Backend Running");
+  res.send("🚀 Todo Backend is Running Successfully");
 });
 
 const PORT = process.env.PORT || 5000;
