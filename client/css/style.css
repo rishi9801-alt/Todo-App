@@ -1,0 +1,120 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+  background: radial-gradient(circle at top, #1e293b, #0f172a);
+  color: #e2e8f0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== APP CARD ===== */
+.container {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+}
+
+/* ===== TITLE ===== */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+/* ===== INPUT ===== */
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  transition: 0.3s;
+}
+
+input:focus {
+  background: rgba(255,255,255,0.12);
+  transform: scale(1.02);
+}
+
+/* ===== BUTTON ===== */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6366f1, #06b6d4);
+  color: white;
+  font-weight: 600;
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(99,102,241,0.3);
+}
+
+/* ===== TODO LIST ===== */
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+/* ===== TODO ITEM ===== */
+li {
+  background: rgba(255,255,255,0.06);
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li:hover {
+  background: rgba(255,255,255,0.1);
+  transform: scale(1.02);
+}
+
+/* ===== TODO TEXT ===== */
+li span {
+  flex: 1;
+}
+
+/* ===== ACTION BUTTONS ===== */
+li button {
+  width: auto;
+  padding: 6px 10px;
+  margin-left: 5px;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+/* CHECK BUTTON */
+li button:first-of-type {
+  background: #22c55e;
+}
+
+/* DELETE BUTTON */
+li button:last-of-type {
+  background: #ef4444;
+}
